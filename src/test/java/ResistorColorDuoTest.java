@@ -21,5 +21,13 @@ public class ResistorColorDuoTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void givenOneBlueAndOneGrey_WhenCheckResistanceValue_ThenShouldReturnSixEight() {
+        String[] input = {"blue", "grey"};
+        int expected = 68;
+        int actual = resistorColorDuo.value(input);
+
+        assertEquals(expected, actual);
+    }
 
 }
