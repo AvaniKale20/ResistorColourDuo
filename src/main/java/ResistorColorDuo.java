@@ -5,7 +5,7 @@ class ResistorColorDuo {
 
     int value(String[] colors) {
         String color = "";
-        for (int i = 0; i < colors.length; i++) {
+        for (int i = 0; i < 2; i++) {
             color += Colors.valueOf(colors[i]).ordinal();
         }
         return Integer.valueOf(color);

@@ -39,4 +39,23 @@ public class ResistorColorDuoTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void givenOneOrangeAndOneOrange_WhenCheckResistanceValue_ThenShouldReturnThreeThree() {
+        String[] input = {"orange", "orange"};
+        int expected = 33;
+        int actual = resistorColorDuo.value(input);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void givenOneGreenAndOneBrownAndOneOrange_WhenCheckResistanceValue_ThenShouldIgnoreThirdColorValueANdReturnFiveOne() {
+        String[] input = {"green", "brown", "orange"};
+        int expected = 51;
+        int actual = resistorColorDuo.value(input);
+
+        assertEquals(expected, actual);
+    }
+
+
 }
